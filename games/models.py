@@ -12,5 +12,8 @@ class Game(models.Model):
     created = models.DateTimeField(auto_created=True)
     update = models.DateTimeField(auto_created=True)
 
+    def __str__(self):
+        return f'{self.title}'
+
 
 
